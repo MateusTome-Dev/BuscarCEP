@@ -1,5 +1,5 @@
 import React from 'react';
-
+import'./CEPInfo.css'
 interface CEPInfoProps {
   cepData: {
     cep: string;
@@ -12,12 +12,22 @@ interface CEPInfoProps {
 
 const CEPInfo: React.FC<CEPInfoProps> = ({ cepData }) => {
   return (
-    <div>
-      <h2>Informações do CEP {cepData.cep}</h2>
-      <p>Logradouro: {cepData.logradouro}</p>
-      <p>Bairro: {cepData.bairro}</p>
-      <p>Cidade: {cepData.localidade} - {cepData.uf}</p>
-    </div>
+    <section className="contentResult">
+                <table>
+                    <tr className="titleResult">
+                        <th>CEP</th>
+                        <th>Logradouro</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr className="result">
+                        <td>{cepData.cep}</td>
+                        <td>{cepData.logradouro}</td>
+                        <td>{cepData.bairro}</td>
+                        <td>{cepData.localidade} - {cepData.uf}</td>
+                    </tr>
+                </table>
+            </section>
   );
 };
 

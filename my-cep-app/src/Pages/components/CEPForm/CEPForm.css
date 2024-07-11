@@ -1,0 +1,33 @@
+.form{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-form{
+    justify-content: center;
+    display: flex;
+    
+    align-items: center;
+}
+.btnIcon{
+    background-color: transparent;
+    outline: none;
+    text-decoration: none;;
+    border: none;
+    margin-left: 5px;
+}
+.icon {
+    color: #c0c0c0;
+    font-size: 28px;
+  }
+  .icon:hover{
+    color: #ffffff;
+  }
+  .form input{
+    border: 0px;
+    color: #c0c0c0;
+    background: #4558ff81;
+    outline: 0px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import'./CEPForm.css'
 import { FaSearch } from "react-icons/fa";
 interface CEPFormProps {
   onSearch: (cep: string) => void;
@@ -13,7 +14,8 @@ const CEPForm: React.FC<CEPFormProps> = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='form' onSubmit={handleSubmit}>
+      <div className='content-form'>
       <input
         type="text"
         placeholder="Digite o CEP"
@@ -21,7 +23,8 @@ const CEPForm: React.FC<CEPFormProps> = ({ onSearch }) => {
         onChange={(e) => setCep(e.target.value)}
         maxLength={8}
       />
-      <button type="submit"><FaSearch className='icon'/></button>
+      <button type="submit" className='btnIcon'><FaSearch className='icon'/></button>
+      </div>
     </form>
   );
 };

@@ -6,17 +6,19 @@
     align-items: center;
     height: 100vh;
     background-color: black;
-    color: white;
+    color: #c0c0c0;
     font-family: "Playfair Display", serif;
   }
-  
+  .content h1{
+    margin-bottom: 20px;
+  }
   .content {
     text-align: center; 
     max-width: 600px; 
     width: 100%; 
     padding: 20px; 
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 16px;
+    
   }
   .content h1{
     font-weight: 400;
