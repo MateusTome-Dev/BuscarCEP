@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.home{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Playfair Display", serif;
+}
+
+.home .video_home{
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.home .conteudo{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -25%;
+    z-index: 99;
+    max-width: 60rem;
+    padding-left: 2rem;
+}
+
+.home .conteudo h3{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.home .conteudo p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.6;
+    padding: 1rem 1rem 1rem 0rem;
+    color: #eee;
+}
+
+.btn{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px 80px 80px 0px;
+    background-color: rgba(0, 0, 255, 0.178);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.btn:hover{
+    letter-spacing: 0.025rem;
+    background-color: rgba(0, 0, 255, 0.281);
+}
+@media (max-width:1490px) {
+    .home .video_home{
+        margin: 0 auto;
+        z-index: 0;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    .home .conteudo h3{
+        font-size: 2.5rem;
+        
+    }
+    
+    .home .conteudo p{
+        font-size: 0.8rem;
+        
+    }
+    .home .conteudo{
+        margin-left: 30px;
+        
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:748px) {
+    .home {
+        justify-content: center;
+    }
+    .home .conteudo {
+        text-align: center;
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -80%;
+        z-index: 99;
+        max-width: 60rem;
+        padding-left: 2rem;
+    }
+    .btn {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        right: auto;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}

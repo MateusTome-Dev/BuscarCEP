@@ -1,0 +1,16 @@
+.block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: -200px 0 0 -200px;
+  height: 350px;
+  width: 400px;
+  background-color: #4043ff;
+  transform: rotate(-45deg);
+}
+@media (max-width: 610px) {
+  .block{
+    height: 270px;
+  width: 320px;
+  }
+}
