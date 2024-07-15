@@ -11,6 +11,7 @@ const Home: React.FC = () => {
         autoPlay
         loop
         muted
+        playsInline
       ></video>
 
       <div className="conteudo">
